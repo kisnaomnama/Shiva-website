@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Shiva Form</title>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="logo">
+            <img src="logo.png" alt="logo-image" id="om-logo">
+        </div>
+        <div class="menu">
+            <a href="shiva-home.html">HOME</a>
+            <a href="shiva-images.html">IMAGES</a>
+            <a href="shiva-link.html">LINKS</a>
+            <a href="shiva-form.html">SUGGESTION</a>
+            <div>
+                <!-- <form action="/find" method="post"> -->
+                <input type="text" id="search" name="search">
+                <button type="submit" for="search">Search</button>
+                <!-- </form> -->
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col1">
+            <img src="yentra.png" alt="yentra-image">
+        </div>
+        <div class="col2">
+            <h2>Please let us know what are your thoughts and suggestions about Shiva after visiting this site.</h2>
+            <form class="suggestion-form" action="/suggestion-form" method="post">
+
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="first-name">
+
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="last-name">
+
+                <label for="email">Email:</label>
+                <input class="info-input" type="text" id="email" name="email">
+
+                <label for="comments">Comments:</label>
+                <textarea name="comments-text" id="comments" cols="44" rows="4"></textarea>
+
+                <label for="belief-system">Belief System:</label>
+                <div id="belief-system">
+                    <div>
+                        <input type="checkbox" id="monotheism" name="religious-belief">
+                        <label for="monothesim">Monothesim</label>
+
+                        <input type="checkbox" id="Spritulism" name="religious-belief">
+                        <label for="Spritulism">Spritulism</label>
+
+                        <input type="checkbox" id="atheism" name="religious-belief">
+                        <label for="atheism">Atheism </label>
+
+                        <input type="checkbox" id="polytheism" name="religious-belief">
+                        <label for="polytheism">Polytheism</label>
+                    </div>
+                </div>
+                <button type="submit" onclick="alert('Thank you for suggestion!')">submit</button>
+            </form>
+        </div>
+</body>
+
+</html>

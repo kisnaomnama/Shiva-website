@@ -1,0 +1,111 @@
+body {
+    background: linear-gradient(275deg, black, darkslateblue);
+}
+
+.nav {
+    height: 5.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(nav-wide.png);
+    border-bottom: solid 2px white;
+    padding: 0rem 2rem 0 1rem;
+    margin-bottom: 0.125rem;
+}
+
+.nav .menu {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.nav #om-logo {
+    border-radius: 50%;
+    height: 4rem;
+}
+
+.nav #search {
+    width: 6rem;
+}
+
+.nav a {
+    text-decoration: none;
+    color: gold;
+}
+
+.nav a:hover,
+.nav button:hover {
+    background-color: blue;
+    color:yellow;
+    cursor: pointer;
+}
+
+.nav button {
+    color: indigo;
+    background-color: gold;
+}
+
+.container {
+    display: flex;
+}
+
+
+.col1,
+.logo {
+    flex: 1;
+}
+
+.col2,
+.menu {
+    flex: 2;
+
+}
+
+.col1 img {
+    width: 95%;
+    height: 85vh;
+    border: 0.125rem solid white;
+}
+
+.col2 {
+    border: 0.125rem solid white;
+    padding: 3rem;
+    position: relative;
+}
+
+.col2 h2 {
+    text-align: center;
+    font-size: 3rem;
+    text-decoration: underline;
+    color: #1d1160;
+    position: sticky;
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-top: -1rem;
+    box-shadow: 0 7px 2rem #ea5753;
+    background: rgba(234, 87, 83, 0.7);
+
+}
+
+.col2 ol {
+    list-style-type: none;
+    gap: 1rem;
+    display: flex;
+    list-style: none;
+    place-items: center;
+    flex-direction: column;
+}
+
+.col2 a {
+    text-decoration: none;
+    font-size: 2rem;
+    line-height: 1.5;
+    box-shadow: 0 7px 2rem #ea5753;
+    background: rgba(234, 87, 83, 0.7);
+}
+
+.col2 a:hover {
+    background-color: darkgoldenrod;
+}

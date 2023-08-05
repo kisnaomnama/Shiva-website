@@ -1,0 +1,93 @@
+
+body{
+    background: linear-gradient(260deg, black, darkslateblue);
+}
+
+.nav{
+    height:5.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(nav-wide.png);
+    border-bottom: solid 2px white;  
+    padding: 0rem 2rem 0 1rem;
+    margin-bottom: 0.125rem;
+}
+
+.nav .menu{
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-weight: bold;
+}
+
+.nav #om-logo{
+    border-radius: 50%;
+    height: 4rem;
+}
+.nav #search{
+    width: 6rem;
+}
+
+.nav a{
+    text-decoration: none;
+    color:gold;
+}
+
+.nav a:hover, .nav button:hover{
+background-color: blue;
+cursor: pointer;
+}
+
+.nav button{
+    color: indigo;
+    background-color: gold;
+}
+
+.container{
+display: flex;
+}
+.col1, .logo{
+flex:1;
+}
+
+.col2, .menu{
+flex:2;
+color:white;
+}
+
+.col1 img{
+    width: 95%;
+    height: 110vh;
+    border: 0.125rem solid white;
+}
+
+.col1 p{
+    color: white;
+}
+
+.col2{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    border: 0.125rem solid black;
+}
+
+.info{
+    border: 0.125rem solid white;
+    padding: 0 1rem;
+}
+
+.info1{
+    padding-top: 1rem;
+    grid-column: 1/ span 3;
+}
+
+.col2 h2, .col2 h3{
+text-align: center;
+text-decoration: underline;
+color: gold;
+}
+
+.info4 img{
+width: 100%;
+}
